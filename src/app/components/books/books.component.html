@@ -1,0 +1,9 @@
+<header class="page-header">
+  <h2>Your Books</h2>
+</header>
+<div>
+  <app-book-entry></app-book-entry>
+</div>
+<div>
+  <app-book-list [books]="books$ | async"></app-book-list>
+</div>

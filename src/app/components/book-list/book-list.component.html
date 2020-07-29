@@ -1,0 +1,15 @@
+<div class="card" *ngFor="let book of books">
+  <div class="card-body">
+    <h5 class="card-title">{{ book.title }}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">By {{ book.author }}</h6>
+    <p class="card-text">
+      {{ book.title }} was written in {{ book.year }} by
+      {{ book.author }}.<br />
+      It is in the genre of {{ book.genre }}.<br />
+      <small>
+        It was added {{ book.created | date }} at
+        {{ book.created | date: "shortTime" }}
+      </small>
+    </p>
+  </div>
+</div>
